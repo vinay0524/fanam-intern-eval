@@ -59,9 +59,13 @@ __pycache__/
 
 ```
 
+**Step 5: Include Your Architecture Documentation**
+Before writing your core logic, document your system design. 
+1. Create an `architecture/` directory in the root of your project.
+2. Upload your architecture diagram (acceptable formats: `.png`, `.pdf`, `.drawio`, or a `.md` file with Mermaid.js syntax).
+3. Include a brief `DESIGN.md` file in the same folder explaining your component choices, data flow, and any trade-offs you made.
 
-
-**Step 5: Develop and Commit**
+**Step 6: Develop and Commit**
 
 1. Complete the coding task in your local environment.
 2. Stage your changes:
@@ -80,7 +84,7 @@ git commit -m "feat: implement database connection and API routing"
 
 *(Note: Make multiple logical commits as you build, rather than one massive commit at the end.)*
 
-**Step 6: Push to Your Fork**
+**Step 7: Push to Your Fork**
 
 1. Push your committed code back to your GitHub account:
 ```bash
@@ -90,7 +94,7 @@ git push origin main
 
 
 
-**Step 7: Final Submission**
+**Step 8: Final Submission**
 
 1. Verify that your code, `requirements.txt`, and updated `README.md` (with setup instructions) are visible on your GitHub fork page.
 2. **If your fork is Public:** Send the direct URL of your repository to your evaluator.
