@@ -1,0 +1,18 @@
+# 1. Write a clean requirements.txt file correctly
+@"
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+langchain==0.1.16
+langchain-community==0.0.32
+langchain-text-splitters
+chromadb==0.4.24
+sentence-transformers==2.6.1
+rank_bm25==0.2.2
+python-docx==1.1.0
+pypdf==4.1.0
+pandas
+"@ | Out-File -Encoding utf8 requirements.txt
+
+# 2. Install using precompiled binary wheels
+python.exe -m pip install --prefer-binary -r requirements.txt

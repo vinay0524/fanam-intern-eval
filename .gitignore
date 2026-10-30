@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+vector_db/
+.DS_Store
+
+fanam-intern-eval-fork/

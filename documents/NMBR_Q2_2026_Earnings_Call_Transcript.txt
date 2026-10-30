@@ -1,0 +1,57 @@
+Nimbus Robotics, Inc. (NASDAQ: NMBR)
+Q2 2026 Earnings Call Transcript — July 22, 2026
+
+Operator: Good morning and welcome to the Nimbus Robotics second quarter fiscal 2026 earnings call.
+Joining us today are CEO Elena Marsh and CFO David Ochoa.
+
+Elena Marsh, CEO:
+Thank you. Q2 was a quarter of contrasts. Revenue grew 9.4% year-over-year to $412.6 million, ahead
+of our guidance range, driven by strong demand for our collaborative arm product line, particularly
+in automotive and electronics assembly customers. At the same time, we saw meaningful gross margin
+pressure from input costs, which I'll let David walk through in detail.
+
+David Ochoa, CFO:
+Thanks, Elena. Gross margin came in at 38.2%, down five and a half points year-over-year. The primary
+driver was a roughly 21% year-over-year increase in the combined cost of steel castings and
+semiconductor components used in our servo drive assemblies. We also saw elevated freight surcharges
+tied to ongoing carrier capacity constraints, which added a smaller but still meaningful drag.
+
+Diluted EPS was $0.61 versus $0.89 a year ago. Of that $0.28 decline, we estimate about $0.19 is
+directly attributable to gross margin compression from these input costs, with the remaining $0.09
+split between higher interest expense on our revolver draw and increased R&D spend on our
+next-generation vision-guided picking system.
+
+On the balance sheet, we ended the quarter with $612.4 million in total debt against $498.1 million
+in equity, putting our debt-to-equity ratio at 1.23x, up from 0.94x a year ago. That increase reflects
+a deliberate decision to draw on our revolver to build inventory ahead of what we expect to be further
+input cost increases in the second half of the year — it is not a reflection of deteriorating
+profitability.
+
+We're taking two concrete actions to address the cost pressure. First, we've qualified a second
+semiconductor supplier in Southeast Asia to reduce single-source exposure. Second, we've locked in a
+12-month fixed-price agreement covering about 60% of our steel casting volume starting in Q3. We
+expect these actions to begin offsetting margin pressure in Q4, though we don't expect gross margin
+to fully recover to prior-year levels until fiscal 2027.
+
+Analyst Q&A — Marcus Webb, Fairview Capital:
+Q: David, can you help us understand why margin didn't recover faster given you've had a couple of
+quarters now to react to input cost inflation?
+A (Ochoa): The steel and semiconductor cost increases were broader and more sustained than we
+initially modeled at the start of the year. We didn't want to lock into a long-term fixed-price
+contract until we had better visibility, which is why the fixed-price agreement only starts in Q3.
+In hindsight we could have moved faster on supplier diversification, but we prioritized getting the
+right long-term partner rather than the fastest option.
+
+Analyst Q&A — Priya Nair, Ashcroft Securities:
+Q: Should we read the revolver drawdown as a signal you're worried about further cost increases, and
+how are you thinking about leverage going forward?
+A (Ochoa): It's fair to say we built inventory defensively. We're comfortable operating up to roughly
+1.5x debt-to-equity for a limited period, but we do expect to delever back toward 1.0x by the end of
+fiscal 2027 as the fixed-price steel contract and new semiconductor supplier reduce the need for
+precautionary inventory build.
+
+Elena Marsh, CEO (closing):
+To summarize: strong demand, real cost pressure, and a clear plan to offset it. We're confident in
+the actions we've laid out and expect margin trends to inflect in the fourth quarter.
+
+Operator: This concludes today's call.
