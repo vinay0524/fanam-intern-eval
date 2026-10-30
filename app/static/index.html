@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Research Assistant | Agentic RAG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --bg-base: #0a0e17;
+      --bg-surface: #111827;
+      --bg-surface-elevated: #1f2937;
+      --bg-card: #151d2d;
+      --border-color: #243046;
+      --border-hover: #3b82f6;
+      --text-main: #f3f4f6;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent-blue: #3b82f6;
+      --accent-blue-hover: #2563eb;
+      --accent-green: #10b981;
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-red: #ef4444;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navigation */
+    header {
+      background: rgba(17, 24, 39, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 0.85rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #2563eb, #10b981);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+    }
+
+    .brand-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: white;
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-text p {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    .nav-btn {
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.45rem 0.9rem;
+      border-radius: 6px;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-btn:hover {
+      color: white;
+      border-color: var(--accent-blue);
+      background: var(--bg-surface-elevated);
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 1.75rem;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left Sidebar: Controls */
+    .controls-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Persona Selector */
+    .persona-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .persona-option {
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem 0.9rem;
+      background: var(--bg-surface);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .persona-option:hover {
+      border-color: var(--border-hover);
+      background: rgba(59, 130, 246, 0.05);
+    }
+
+    .persona-option.active {
+      border-color: var(--accent-blue);
+      background: rgba(59, 130, 246, 0.12);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+    }
+
+    .persona-icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .persona-meta h4 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .persona-meta p {
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      margin-top: 0.15rem;
+      line-height: 1.3;
+    }
+
+    /* Switch toggle */
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 0;
+      border-top: 1px solid var(--border-color);
+      margin-top: 0.5rem;
+    }
+
+    .toggle-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .toggle-sub {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--bg-surface-elevated);
+      border: 1px solid var(--border-color);
+      transition: .3s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
+
+    /* Query Box */
+    .query-textarea {
+      width: 100%;
+      height: 105px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--text-main);
+      resize: vertical;
+      transition: border-color 0.2s;
+    }
+
+    .query-textarea:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    .presets-container {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .preset-chip {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 0.45rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+      line-height: 1.3;
+    }
+
+    .preset-chip:hover {
+      border-color: var(--accent-blue);
+      color: white;
+      background: rgba(59, 130, 246, 0.08);
+    }
+
+    .preset-type {
+      font-weight: 700;
+      color: var(--accent-blue);
+      margin-right: 0.3rem;
+    }
+
+    .btn-submit {
+      width: 100%;
+      margin-top: 0.9rem;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-submit:hover:not(:disabled) {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Right View: Results */
+    .results-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Metrics Strip */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .metric-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .metric-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+    }
+
+    .metric-value {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .confidence-meter {
+      height: 6px;
+      width: 100%;
+      background: var(--bg-surface-elevated);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 0.3rem;
+    }
+
+    .confidence-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      width: 0%;
+      transition: width 0.6s ease;
+    }
+
+    .metric-subtitle {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* Details Banner */
+    .info-banner {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .info-tag {
+      font-weight: 600;
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    .info-content {
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      background: var(--bg-surface);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .tag-pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    /* Chunks list */
+    .chunks-tray {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.3rem;
+    }
+
+    .chunk-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      background: rgba(139, 92, 246, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      cursor: default;
+    }
+
+    /* Output Answer Area */
+    .answer-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+      min-height: 380px;
+      position: relative;
+    }
+
+    .answer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .answer-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-copy {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s;
+    }
+
+    .btn-copy:hover {
+      color: white;
+      border-color: var(--accent-blue);
+    }
+
+    /* Markdown Styling in answer */
+    .markdown-body {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #e2e8f0;
+    }
+
+    .markdown-body h3 {
+      font-size: 1.15rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.6rem;
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.35rem;
+    }
+
+    .markdown-body h4 {
+      font-size: 0.98rem;
+      margin-top: 1rem;
+      margin-bottom: 0.45rem;
+      color: #93c5fd;
+    }
+
+    .markdown-body p {
+      margin-bottom: 0.85rem;
+    }
+
+    .markdown-body ul, .markdown-body ol {
+      margin-bottom: 0.85rem;
+      padding-left: 1.4rem;
+    }
+
+    .markdown-body li {
+      margin-bottom: 0.35rem;
+    }
+
+    .markdown-body code {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      color: #7dd3fc;
+    }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--accent-blue);
+      padding-left: 0.85rem;
+      color: var(--text-muted);
+      margin: 0.85rem 0;
+      font-style: italic;
+    }
+
+    .markdown-body strong {
+      color: #f8fafc;
+      font-weight: 600;
+    }
+
+    /* Empty & Loading states */
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      color: var(--text-dim);
+      text-align: center;
+      gap: 0.75rem;
+    }
+
+    .empty-state svg {
+      width: 48px;
+      height: 48px;
+      stroke: var(--text-dim);
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 0.8s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Tab switcher for Answer / Raw JSON */
+    .tab-group {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      color: white;
+      background: var(--bg-surface-elevated);
+    }
+
+    .json-viewer {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      background: #070a10;
+      padding: 1rem;
+      border-radius: 8px;
+      color: #a5b4fc;
+      max-height: 450px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+      </div>
+      <div class="brand-text">
+        <h1>Financial Research Assistant</h1>
+        <p>Production Agentic RAG • FAISS + BM25 Hybrid Index</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="badge-status" id="system-status">
+        <div class="badge-dot"></div>
+        <span id="system-status-text">Ready • 53 Chunks</span>
+      </div>
+      <a href="/docs" target="_blank" class="nav-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Swagger API Docs
+      </a>
+      <button class="nav-btn" onclick="triggerIngestion()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+        Re-Index Data
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Grid Workspace -->
+  <main>
+    <!-- Left: Controls & Prompts -->
+    <div class="controls-panel">
+      <!-- Persona Card -->
+      <div class="card">
+        <div class="card-title">1. Research Persona</div>
+        <div class="persona-grid">
+          <div class="persona-option active" data-persona="Junior Analyst" onclick="selectPersona(this)">
+            <div class="persona-icon">👨‍💼</div>
+            <div class="persona-meta">
+              <h4>Junior Analyst</h4>
+              <p>Step-by-step financial reasoning, concept definitions, and explicit chunk citations.</p>
+            </div>
+          </div>
+          <div class="persona-option" data-persona="Portfolio Manager" onclick="selectPersona(this)">
+            <div class="persona-icon">📈</div>
+            <div class="persona-meta">
+              <h4>Portfolio Manager</h4>
+              <p>Concise, high-level, focused on key investment takeaways, valuation, and balance-sheet risk.</p>
+            </div>
+          </div>
+          <div class="persona-option" data-persona="Compliance Reviewer" onclick="selectPersona(this)">
+            <div class="persona-icon">⚖️</div>
+            <div class="persona-meta">
+              <h4>Compliance Reviewer</h4>
+              <p>Strict audit trails, source citations, explicit limitations, and data confidence caveats.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Search Toggle -->
+        <div class="toggle-row">
+          <div>
+            <div class="toggle-label">Deep Search (Query Decomposition)</div>
+            <div class="toggle-sub">Breaks down query into 2-3 logical sub-queries for multi-hop retrieval</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="deep-search-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Query Input Card -->
+      <div class="card">
+        <div class="card-title">2. Financial Research Query</div>
+        <textarea
+          id="query-input"
+          class="query-textarea"
+          placeholder="Enter financial research query or select a preset below..."
+        >What was Nimbus Robotics (NMBR) net revenue and gross margin in Q2 2026?</textarea>
+
+        <div class="presets-container">
+          <div class="preset-chip" onclick="applyPreset(1)">
+            <span class="preset-type">[Fact]</span> NMBR Q2 2026 net revenue & gross margin
+          </div>
+          <div class="preset-chip" onclick="applyPreset(2)">
+            <span class="preset-type">[Compare]</span> Compare gross margins and leverage of NMBR vs SLDC
+          </div>
+          <div class="preset-chip" onclick="applyPreset(3)">
+            <span class="preset-type">[Multi-Hop]</span> Why did NMBR gross margin compress & impact EPS?
+          </div>
+          <div class="preset-chip" onclick="applyPreset(4)">
+            <span class="preset-type">[Decision]</span> Valuation and balance-sheet risk allocation for NMBR
+          </div>
+        </div>
+
+        <button id="submit-btn" class="btn-submit" onclick="executeResearch()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Run Agentic Research
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Research Output & Agent Metrics -->
+    <div class="results-panel">
+      <!-- Metric Cards Strip -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-title">Weighted Confidence</div>
+          <div class="metric-value" id="val-confidence">--</div>
+          <div class="confidence-meter">
+            <div class="confidence-fill" id="meter-confidence"></div>
+          </div>
+          <div class="metric-subtitle" id="sub-confidence">Similarity • Diversity • Sufficiency</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-title">Query Classification</div>
+          <div class="metric-value" style="font-size: 1.05rem;" id="val-query-type">--</div>
+          <div class="metric-subtitle" id="sub-query-type">Intent Classifier</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-title">Retrieval Sufficiency</div>
+          <div class="metric-value" style="font-size: 1.1rem;" id="val-sufficiency">--</div>
+          <div class="metric-subtitle" id="sub-attempts">Attempts: --</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-title">Deep Search Status</div>
+          <div class="metric-value" style="font-size: 1.05rem;" id="val-deep-search">--</div>
+          <div class="metric-subtitle">Query Decomposition</div>
+        </div>
+      </div>
+
+      <!-- Execution Trace Info -->
+      <div class="info-banner" id="info-banner" style="display: none;">
+        <div class="info-row">
+          <span class="info-tag">Semantic Rewrite:</span>
+          <span class="info-content" id="val-rewritten">--</span>
+        </div>
+        <div class="info-row">
+          <span class="info-tag">Cited Chunks:</span>
+          <div class="chunks-tray" id="val-chunks-tray"></div>
+        </div>
+      </div>
+
+      <!-- Synthesized Answer Card -->
+      <div class="answer-container">
+        <div class="answer-header">
+          <div class="answer-title">
+            <span id="persona-title-badge" class="tag-pill">Junior Analyst</span>
+            <span>Synthesized Research Assessment</span>
+          </div>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <div class="tab-group">
+              <button class="tab-btn active" id="tab-formatted" onclick="switchTab('formatted')">Rendered</button>
+              <button class="tab-btn" id="tab-json" onclick="switchTab('json')">JSON Response</button>
+            </div>
+            <button class="btn-copy" onclick="copyAnswer()">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Rendered Markdown Body -->
+        <div id="answer-content" class="markdown-body">
+          <div class="empty-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <p>Select a persona, choose or enter a query, and click <strong>"Run Agentic Research"</strong> to generate a persona-grounded response.</p>
+          </div>
+        </div>
+
+        <!-- Raw JSON Viewer -->
+        <pre id="json-content" class="json-viewer" style="display: none;"></pre>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let currentPersona = "Junior Analyst";
+    let lastResponseData = null;
+
+    const PRESETS = {
+      1: {
+        query: "What was Nimbus Robotics (NMBR) net revenue and gross margin in Q2 2026?",
+        persona: "Junior Analyst",
+        deep_search: false
+      },
+      2: {
+        query: "Compare the gross margins and leverage profiles of NMBR and SLDC.",
+        persona: "Portfolio Manager",
+        deep_search: true
+      },
+      3: {
+        query: "Why did NMBR's gross margin compress, how did it impact EPS, and why did debt-to-equity rise?",
+        persona: "Compliance Reviewer",
+        deep_search: true
+      },
+      4: {
+        query: "Evaluate NMBR valuation multiple and balance sheet risk relative to Solace Dynamics (SLDC).",
+        persona: "Portfolio Manager",
+        deep_search: true
+      }
+    };
+
+    function selectPersona(elem) {
+      document.querySelectorAll(".persona-option").forEach(el => el.classList.remove("active"));
+      elem.classList.add("active");
+      currentPersona = elem.getAttribute("data-persona");
+      document.getElementById("persona-title-badge").innerText = currentPersona;
+    }
+
+    function applyPreset(id) {
+      const p = PRESETS[id];
+      if (!p) return;
+      document.getElementById("query-input").value = p.query;
+      document.getElementById("deep-search-toggle").checked = p.deep_search;
+
+      const personaElems = document.querySelectorAll(".persona-option");
+      personaElems.forEach(el => {
+        if (el.getAttribute("data-persona") === p.persona) {
+          selectPersona(el);
+        }
+      });
+    }
+
+    async function checkHealth() {
+      try {
+        const res = await fetch("/health");
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById("system-status-text").innerText = `Ready • ${data.indexed_chunks || 53} Chunks`;
+        }
+      } catch (err) {
+        document.getElementById("system-status-text").innerText = "Connecting...";
+      }
+    }
+
+    async function triggerIngestion() {
+      const btn = event.target;
+      const originalText = btn.innerText;
+      btn.innerText = "Indexing...";
+      try {
+        const res = await fetch("/ingest", { method: "POST" });
+        const data = await res.json();
+        alert(`Ingestion Successful! Total indexed chunks: ${data.chunk_count}`);
+        checkHealth();
+      } catch (err) {
+        alert("Ingestion error: " + err);
+      } finally {
+        btn.innerText = originalText;
+      }
+    }
+
+    async function executeResearch() {
+      const query = document.getElementById("query-input").value.trim();
+      if (!query) {
+        alert("Please enter a research query.");
+        return;
+      }
+
+      const deepSearch = document.getElementById("deep-search-toggle").checked;
+      const submitBtn = document.getElementById("submit-btn");
+      const answerContent = document.getElementById("answer-content");
+      const jsonContent = document.getElementById("json-content");
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span> Processing Hybrid RAG...';
+      answerContent.innerHTML = '<div class="empty-state"><span class="spinner" style="width:36px;height:36px;"></span><p>Executing hybrid FAISS + BM25 search, RRF fusion, and persona synthesis...</p></div>';
+
+      try {
+        const payload = {
+          session_id: "web_session_" + Date.now().toString(36),
+          query: query,
+          persona: currentPersona,
+          deep_search: deepSearch
+        };
+
+        const res = await fetch("/finance-agent", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.detail || "Request failed");
+        }
+
+        const data = await res.json();
+        lastResponseData = data;
+
+        // Populate Metrics
+        const conf = Math.round(data.confidence_score * 100);
+        document.getElementById("val-confidence").innerText = `${conf}%`;
+        document.getElementById("meter-confidence").style.width = `${conf}%`;
+        document.getElementById("val-query-type").innerText = data.query_type;
+        document.getElementById("val-sufficiency").innerHTML = data.retrieval_sufficient 
+          ? '<span style="color:#10b981;">Sufficient</span>' 
+          : '<span style="color:#f59e0b;">Partial</span>';
+        document.getElementById("sub-attempts").innerText = `Attempts: ${data.retrieval_attempts}`;
+        document.getElementById("val-deep-search").innerText = data.deep_search_used ? "Active" : "Direct";
+
+        // Info Banner
+        document.getElementById("info-banner").style.display = "flex";
+        document.getElementById("val-rewritten").innerText = data.rewritten_query || data.original_query;
+
+        // Chunks Tray
+        const tray = document.getElementById("val-chunks-tray");
+        tray.innerHTML = "";
+        (data.used_chunks || []).forEach(chunkId => {
+          const badge = document.createElement("span");
+          badge.className = "chunk-badge";
+          badge.innerText = chunkId;
+          tray.appendChild(badge);
+        });
+
+        // Format Answer
+        answerContent.innerHTML = marked.parse(data.answer);
+        jsonContent.innerText = JSON.stringify(data, null, 2);
+
+      } catch (err) {
+        answerContent.innerHTML = `<div class="empty-state" style="color:var(--accent-red);"><p>Error executing research agent: ${err.message}</p></div>`;
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Run Agentic Research';
+      }
+    }
+
+    function switchTab(tab) {
+      const formattedBtn = document.getElementById("tab-formatted");
+      const jsonBtn = document.getElementById("tab-json");
+      const answerContent = document.getElementById("answer-content");
+      const jsonContent = document.getElementById("json-content");
+
+      if (tab === "formatted") {
+        formattedBtn.classList.add("active");
+        jsonBtn.classList.remove("active");
+        answerContent.style.display = "block";
+        jsonContent.style.display = "none";
+      } else {
+        jsonBtn.classList.add("active");
+        formattedBtn.classList.remove("active");
+        answerContent.style.display = "none";
+        jsonContent.style.display = "block";
+      }
+    }
+
+    function copyAnswer() {
+      if (!lastResponseData) return;
+      navigator.clipboard.writeText(lastResponseData.answer).then(() => {
+        alert("Synthesized response copied to clipboard!");
+      });
+    }
+
+    // Initialize on load
+    window.onload = () => {
+      checkHealth();
+    };
+  </script>
+</body>
+</html>
+

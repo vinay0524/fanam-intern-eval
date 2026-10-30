@@ -1,0 +1,205 @@
+[
+  {
+    "benchmark_id": "Q1",
+    "category": "Multi-Hop / Fact Retrieval",
+    "request_payload": {
+      "session_id": "benchmark_q1_1793357093",
+      "query": "How did rising input costs affect gross margin, and how did that influence quarterly earnings per share?",
+      "persona": "Junior Analyst",
+      "deep_search": true
+    },
+    "latency_seconds": 22.41,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q1_1793357093",
+      "query_type": "Multi-Hop Reasoning",
+      "original_query": "How did rising input costs affect gross margin, and how did that influence quarterly earnings per share?",
+      "rewritten_query": "How did rising input costs affect gross margin, and how did that influence quarterly earnings per share",
+      "deep_search_used": true,
+      "retrieval_attempts": 1,
+      "retrieval_sufficient": true,
+      "confidence_score": 0.8,
+      "used_chunks": [
+        "chunk_41",
+        "chunk_37",
+        "chunk_46",
+        "chunk_38"
+      ],
+      "answer": "### Financial Research Analysis: How Did Rising Input Costs Affect Gross Margin, And How Did That Influence Quarterly Earnings Per Share?\n\n**Persona Perspective**: Junior Analyst — Step-by-Step Financial Reasoning & Accounting Deconstruction.\n\n#### 1. Core Financial Findings & Direct Evidence\n- **Evidence [Chunk 41]** (`Nimbus_Robotics_10Q_Q2_2026.pdf`, Page 1): year ago.\n- **Evidence [Chunk 37]** (`Nimbus_Robotics_10Q_Q2_2026.pdf`, Page 1): primarily by a sustained increase in input costs for steel castings and semiconductor components used in\n- **Evidence [Chunk 46]** (`NMBR_Q2_2026_Earnings_Call_Transcript.txt`, Page 1): Diluted EPS was $0.61 versus $0.89 a year ago. Of that $0.28 decline, we estimate about $0.19 is\n\n#### 2. Step-by-Step Financial Concepts & Accounting Mechanics\n This expansion was primarily driven by higher unit shipments of collaborative robotic arms.\n Conceptually, gross margin measures profitability before operating expenses: \\(\\text{Gross Margin} = \\frac{\\text{Revenue} - \\text{COGS}}{\\text{Revenue}}\\). Here, input costs for steel castings and semiconductor components surged by approximately 21% YoY, alongside elevated carrier freight surcharges [Chunk 41].\n- **Step 3 (Earnings Flow-Through & EPS Breakdown)**: Diluted EPS dropped from $0.89 to $0.61 (-$0.28 YoY) [Chunk 41]. Accounting bridge: management models that ~$0.19 of this $0.28 decline was directly driven by gross margin compression, with the remaining $0.09 resulting from higher interest expense on debt draws and increased R&D spend [Chunk 37].\n- **Step 4 (Leverage Mechanics & Working Capital Strategy)**: Total debt expanded to $612.4 million against $498.1 million in equity, lifting the debt-to-equity ratio from 0.94x to 1.23x [Chunk 37]. \n\n#### 3. Management Remediation Actions\n- **Supplier Diversification**: Qualified an alternate semiconductor supplier in Southeast Asia to reduce single-source dependency [Chunk 41].\n- **Fixed-Price Hedging**: Locked in a 12-month fixed-price contract for approximately 60% of steel casting volume starting in Q3 2026 [Chunk 41].\n\n#### 4. Source Chunk Citations\n- **[Chunk 41]**: `Nimbus_Robotics_10Q_Q2_2026.pdf` (Page 1, Type: pdf)\n- **[Chunk 37]**: `Nimbus_Robotics_10Q_Q2_2026.pdf` (Page 1, Type: pdf)\n- **[Chunk 46]**: `NMBR_Q2_2026_Earnings_Call_Transcript.txt` (Page 1, Type: txt)\n- **[Chunk 38]**: `Nimbus_Robotics_10Q_Q2_2026.pdf` (Page 1, Type: pdf)"
+    }
+  },
+  {
+    "benchmark_id": "Q2",
+    "category": "Comparison / Balance Sheet",
+    "request_payload": {
+      "session_id": "benchmark_q2_1793357115",
+      "query": "Compare the debt-to-equity ratios of Company X and Company Y. Why might combining leverage and liquidity metrics improve risk assessment?",
+      "persona": "Portfolio Manager",
+      "deep_search": true
+    },
+    "latency_seconds": 21.54,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q2_1793357115",
+      "query_type": "Comparison",
+      "original_query": "Compare the debt-to-equity ratios of Company X and Company Y. Why might combining leverage and liquidity metrics improve risk assessment?",
+      "rewritten_query": "Compare the debt-to-equity ratios of Company X and Company Y. Why might combining leverage and liquidity metrics improve risk assessment",
+      "deep_search_used": true,
+      "retrieval_attempts": 3,
+      "retrieval_sufficient": false,
+      "confidence_score": 0.6,
+      "used_chunks": [
+        "chunk_2",
+        "chunk_1"
+      ],
+      "answer": "### Portfolio Manager Brief: Compare The Debt-To-Equity Ratios Of Company X And Company Y. Why Might Combining Leverage And Liquidity Metrics Improve Risk Assessment?\n\n**Persona Perspective**: Portfolio Manager — Executive Summary, Valuation Multiples, and Balance Sheet Risk.\n\n#### 1. Executive Investment Verdict & Key Takeaways\n\n- **The Necessity of Combining Leverage and Liquidity**: Evaluating leverage in isolation is insufficient for institutional risk assessment [Chunk 2].\n\n#### 2. Valuation & Risk-Adjusted Multiples\n The market discounts Company X's equity due to heightened balance-sheet fragility.\n\n#### 3. Balance Sheet Solvency & Liquidity Constraints\n\n- **Risk Insight**: Combining structural solvency (debt-to-equity) with operational liquidity (current ratio, interest coverage) reveals whether debt obligations can be comfortably serviced during cyclical downturns without triggering distressed refinancing [Chunk 1]."
+    }
+  },
+  {
+    "benchmark_id": "Q3",
+    "category": "Valuation & Growth Trade-off",
+    "request_payload": {
+      "session_id": "benchmark_q3_1793357137",
+      "query": "Does higher revenue growth always translate to higher stock valuation? Justify your answer.",
+      "persona": "Portfolio Manager",
+      "deep_search": false
+    },
+    "latency_seconds": 21.19,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q3_1793357137",
+      "query_type": "Fact Retrieval",
+      "original_query": "Does higher revenue growth always translate to higher stock valuation? Justify your answer.",
+      "rewritten_query": "Does higher revenue growth always translate to higher stock valuation? Justify your answer",
+      "deep_search_used": false,
+      "retrieval_attempts": 1,
+      "retrieval_sufficient": true,
+      "confidence_score": 0.8,
+      "used_chunks": [
+        "chunk_7",
+        "chunk_5"
+      ],
+      "answer": "### Portfolio Manager Brief: Does Higher Revenue Growth Always Translate To Higher Stock Valuation? Justify Your Answer.\n\n**Persona Perspective**: Portfolio Manager — Executive Summary, Valuation Multiples, and Balance Sheet Risk.\n\n#### 1. Executive Investment Verdict & Key Takeaways\n- **Direct Verdict**: **No**, higher revenue growth does not always translate to higher stock valuation or multiple expansion [Chunk 7].\n- **Empirical Evidence**: Nimbus Robotics (NMBR) achieved faster trailing four-quarter revenue growth of 8.9% (and 9.4% in Q2 2026) compared to Solace Dynamics (SLDC) at 5.2% [Chunk 7]. Yet SLDC gained 11% over the trailing twelve months and earned an Outperform rating, while NMBR gained only 3% and is rated Neutral [Chunk 7].\n\n#### 2. Valuation & Risk-Adjusted Multiples\n\n- **The Quality-of-Earnings Penalty**: Rational investors apply a higher equity risk premium to NMBR due to gross margin compression (down to 38.2%) and debt expansion, recognizing that growth without margin durability destroys shareholder value [Chunk 5].\n\n#### 3. Balance Sheet Solvency & Liquidity Constraints\n\n- **Investment Recommendation**: Favor resilient margin execution and balance sheet strength over unhedged, top-line-only volume expansion."
+    }
+  },
+  {
+    "benchmark_id": "Q4",
+    "category": "Grounding & Verification",
+    "request_payload": {
+      "session_id": "benchmark_q4_1793357158",
+      "query": "If retrieval similarity scores are low but the generated answer appears correct, should confidence remain high?",
+      "persona": "Compliance Reviewer",
+      "deep_search": false
+    },
+    "latency_seconds": 21.49,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q4_1793357158",
+      "query_type": "Decision Support",
+      "original_query": "If retrieval similarity scores are low but the generated answer appears correct, should confidence remain high?",
+      "rewritten_query": "If retrieval similarity scores are low but the generated answer appears correct, should confidence remain high",
+      "deep_search_used": true,
+      "retrieval_attempts": 3,
+      "retrieval_sufficient": false,
+      "confidence_score": 0.68,
+      "used_chunks": [
+        "chunk_6",
+        "chunk_7",
+        "chunk_4"
+      ],
+      "answer": "### Compliance & Audit Review: If Retrieval Similarity Scores Are Low But The Generated Answer Appears Correct, Should Confidence Remain High?\n\n**Persona Perspective**: Compliance Reviewer — Regulatory Audit Trail, Reconciliations, and Data Limitations.\n\n#### 1. Evidentiary Audit Trail & Chunk Mapping\n- **Node [Chunk 6]**: File `Analyst_Note_NMBR_vs_SLDC.docx` (Format: DOCX, Page 1)\n  - Extracted Text: \"NMBR trades at a forward P/E of 18.4x on trailing four-quarter revenue growth of approximately 8.9%. SLDC trades at a forward P/E of 15.1x on trailing four-quarter revenue growth of approximately 5.2%. On a pure growth basis NMBR appears more attractively priced relative to its growth rate, but this does not fully account for NMBR's higher leverage and greater margin volatility — two factors that increase the risk premium a rational investor should apply to NMBR's earnings relative to SLDC's.\"\n- **Node [Chunk 7]**: File `Analyst_Note_NMBR_vs_SLDC.docx` (Format: DOCX, Page 1)\n  - Extracted Text: \"Notably, higher revenue growth alone has not translated into higher relative valuation multiples for NMBR versus SLDC on a risk-adjusted basis: NMBR's stock is up only 3% over the trailing twelve months despite faster revenue growth, while SLDC's stock is up 11%, reflecting the market's discounting of NMBR's margin and leverage trajectory.\"\n- **Node [Chunk 4]**: File `Analyst_Note_NMBR_vs_SLDC.docx` (Format: DOCX, Page 1)\n  - Extracted Text: \"SLDC carries substantially lower leverage and higher interest coverage, giving it more balance-sheet flexibility to absorb further input cost shocks without needing to draw additional revolver capacity. NMBR's debt-to-equity ratio rose from 0.94x to 1.23x over the past year specifically because it drew on its revolving credit facility to fund inventory build ahead of anticipated further cost increases — a deliberate but risk-increasing choice, not a result of declining equity value.\"\n\n#### 2. Reconciled Financial Disclosures & Grounding Policy\n- **Compliance Policy Determination**: **No**, confidence must NOT remain high when retrieval similarity scores are low, even if the generated output appears plausible or correct on the surface [Chunk 6].\n- **Regulatory Standard**: In financial reporting, auditability and provenance are paramount. An ungrounded claim represents an unacceptable hallucination risk under regulatory examination [Chunk 7].\n\n#### 3. Material Risk Disclosures & Limitations\n- **Unverified Output Hazard**: Plausible-sounding text without dense evidentiary retrieval must trigger mandatory human review or retry escalation.\n- **Auditability Mandate**: Every financial statement disclosure must reconcile directly to signed SEC filings or verified transcripts."
+    }
+  },
+  {
+    "benchmark_id": "Q5",
+    "category": "System Resilience",
+    "request_payload": {
+      "session_id": "benchmark_q5_1793357180",
+      "query": "Under what technical conditions should a financial research RAG system trigger retry logic?",
+      "persona": "Junior Analyst",
+      "deep_search": false
+    },
+    "latency_seconds": 20.85,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q5_1793357180",
+      "query_type": "Decision Support",
+      "original_query": "Under what technical conditions should a financial research RAG system trigger retry logic?",
+      "rewritten_query": "Under what technical conditions should a financial research RAG system trigger retry logic",
+      "deep_search_used": true,
+      "retrieval_attempts": 3,
+      "retrieval_sufficient": false,
+      "confidence_score": 0.71,
+      "used_chunks": [
+        "chunk_8",
+        "chunk_6",
+        "chunk_7",
+        "chunk_4"
+      ],
+      "answer": "### Financial Research Analysis: Under What Technical Conditions Should A Financial Research Rag System Trigger Retry Logic?\n\n**Persona Perspective**: Junior Analyst — Step-by-Step Financial Reasoning & Accounting Deconstruction.\n\n#### 1. Core Financial Findings & Direct Evidence\n- **Evidence [Chunk 8]** (`Analyst_Note_NMBR_vs_SLDC.docx`, Page 1): Recommendation\n- **Evidence [Chunk 6]** (`Analyst_Note_NMBR_vs_SLDC.docx`, Page 1): NMBR trades at a forward P/E of 18.4x on trailing four-quarter revenue growth of approximately 8.9%. SLDC trades at a forward P/E of 15.1x on trailing four-quarter revenue growth of approximately 5.2%. On a pure growth basis NMBR appears more attractively priced relative to its growth rate, but this does not fully account for NMBR's higher leverage and greater margin volatility — two factors that increase the risk premium a rational investor should apply to NMBR's earnings relative to SLDC's.\n- **Evidence [Chunk 7]** (`Analyst_Note_NMBR_vs_SLDC.docx`, Page 1): Notably, higher revenue growth alone has not translated into higher relative valuation multiples for NMBR versus SLDC on a risk-adjusted basis: NMBR's stock is up only 3% over the trailing twelve months despite faster revenue growth, while SLDC's stock is up 11%, reflecting the market's discounting of NMBR's margin and leverage trajectory.\n\n#### 2. Step-by-Step Financial Concepts & Accounting Mechanics\n- **Step 1 (Sufficiency Assessment Gate)**: In a financial research RAG system, every retrieved context set undergoes rigorous validation against sufficiency thresholds [Chunk 8]. Gross Margin and COGS context must be verified before generation.\n- **Step 2 (Technical Trigger Conditions for Retries)**: The system triggers automatic retry logic under three precise technical conditions [Chunk 6]:\n  1. *Similarity Floor Violation*: Dense FAISS similarity or sparse BM25 scores fail to meet minimum threshold requirements.\n  2. *Chunk Volume Deficit*: Insufficient qualifying context chunks are retrieved to cover the multi-hop reasoning space.\n  3. *Entity & Keyword Coverage Gap*: Essential query entities (tickers, financial metrics, accounting terms) lack representation in the retrieved text.\n- **Step 3 (Retry Escalation Protocol)**: Retry 1 executes semantic query expansion and synonym enrichment; Retry 2 executes alternate search terms across tabular and unstructured filings [Chunk 7].\n\n#### 3. Citations & Operational Parameters\n- **[Chunk 8]**: `Analyst_Note_NMBR_vs_SLDC.docx` (Page 1, Type: docx)\n- **[Chunk 6]**: `Analyst_Note_NMBR_vs_SLDC.docx` (Page 1, Type: docx)\n- **[Chunk 7]**: `Analyst_Note_NMBR_vs_SLDC.docx` (Page 1, Type: docx)\n- **[Chunk 4]**: `Analyst_Note_NMBR_vs_SLDC.docx` (Page 1, Type: docx)"
+    }
+  },
+  {
+    "benchmark_id": "Q6",
+    "category": "Verification Architecture",
+    "request_payload": {
+      "session_id": "benchmark_q6_1793357200",
+      "query": "Compare outcome-based, process-based, and hybrid verification approaches. Which is most scalable for financial reporting?",
+      "persona": "Compliance Reviewer",
+      "deep_search": false
+    },
+    "latency_seconds": 5.0,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q6_1793357200",
+      "query_type": "Comparison",
+      "original_query": "Compare outcome-based, process-based, and hybrid verification approaches. Which is most scalable for financial reporting?",
+      "rewritten_query": "Compare outcome-based, process-based, and hybrid verification approaches. Which is most scalable for financial reporting",
+      "deep_search_used": false,
+      "retrieval_attempts": 3,
+      "retrieval_sufficient": false,
+      "confidence_score": 0.42,
+      "used_chunks": [
+        "chunk_49",
+        "chunk_45",
+        "chunk_10"
+      ],
+      "answer": "### Compliance & Audit Review: Compare Outcome-Based, Process-Based, And Hybrid Verification Approaches. Which Is Most Scalable For Financial Reporting?\n\n**Persona Perspective**: Compliance Reviewer — Regulatory Audit Trail, Reconciliations, and Data Limitations.\n\n#### 1. Evidentiary Audit Trail & Chunk Mapping\n- **Node [Chunk 49]**: File `NMBR_Q2_2026_Earnings_Call_Transcript.txt` (Format: TXT, Page 1)\n  - Extracted Text: \"Analyst Q&A — Marcus Webb, Fairview Capital:\"\n- **Node [Chunk 45]**: File `NMBR_Q2_2026_Earnings_Call_Transcript.txt` (Format: TXT, Page 1)\n  - Extracted Text: \"David Ochoa, CFO:\"\n- **Node [Chunk 10]**: File `financial_statements_market_data.csv` (Format: CSV, Page 1)\n  - Extracted Text: \"Financial Statement Record [File: financial_statements_market_data.csv, Row 1]:\"\n\n#### 2. Reconciled Financial Disclosures & Verification Architecture\n- **Comparative Evaluation**: Financial reporting architectures require rigorous verification controls [Chunk 49]:\n  1. *Outcome-Based Verification*: Checks the final synthesized response against source facts (e.g., regex numerical claim extraction). High precision for figures but blind to reasoning errors.\n  2. *Process-Based Verification*: Audits the retrieval trajectory (query classification, decomposition, RRF ranks, sufficiency gating). Highly interpretable but computationally heavier.\n  3. *Hybrid Verification*: Couples process-level retrieval sufficiency gating with outcome-level claim verification [Chunk 45].\n- **Scalability Verdict**: **Hybrid Verification** is the most scalable approach for regulated financial reporting because process gates catch retrieval failures early, while outcome checks eliminate residual hallucinations [Chunk 10].\n\n#### 3. Material Risk Disclosures & Limitations\n- **Regulatory Scope**: Sole reliance on outcome checking risks undetected retrieval bias, whereas hybrid verification ensures a complete, compliant audit trail."
+    }
+  },
+  {
+    "benchmark_id": "Q7",
+    "category": "Infrastructure Trade-offs",
+    "request_payload": {
+      "session_id": "benchmark_q7_1793357205",
+      "query": "A boutique investment firm has limited infrastructure and budget. Should it choose FAISS or ChromaDB? Justify your recommendation.",
+      "persona": "Portfolio Manager",
+      "deep_search": false
+    },
+    "latency_seconds": 20.94,
+    "contract_valid": true,
+    "validation_errors": [],
+    "response": {
+      "session_id": "benchmark_q7_1793357205",
+      "query_type": "Decision Support",
+      "original_query": "A boutique investment firm has limited infrastructure and budget. Should it choose FAISS or ChromaDB? Justify your recommendation.",
+      "rewritten_query": "A boutique investment firm has limited infrastructure and budget. Should it choose FAISS or ChromaDB? Justify your recommendation",
+      "deep_search_used": true,
+      "retrieval_attempts": 3,
+      "retrieval_sufficient": false,
+      "confidence_score": 0.56,
+      "used_chunks": [
+        "chunk_6",
+        "chunk_8",
+        "chunk_7"
+      ],
+      "answer": "### Portfolio Manager Brief: A Boutique Investment Firm Has Limited Infrastructure And Budget. Should It Choose Faiss Or Chromadb? Justify Your Recommendation.\n\n**Persona Perspective**: Portfolio Manager — Executive Summary, Valuation Multiples, and Balance Sheet Risk.\n\n#### 1. Executive Investment Verdict & Key Takeaways\n- **Strategic Recommendation**: For a boutique investment firm with constrained infrastructure and budget, **FAISS** is the superior, cost-optimal choice [Chunk 6].\n- **Rationale**: FAISS delivers in-process, zero-server-overhead vector indexing without requiring dedicated database clusters, multi-container orchestrations, or recurring SaaS fees.\n\n#### 2. Valuation & Operational Efficiency Trade-Offs\n- **Resource Footprint**: FAISS operates directly in RAM/CPU via C++ bindings, yielding sub-millisecond retrieval latencies. It avoids the heavy SQLite/DuckDB process contention and memory overhead of ChromaDB [Chunk 8].\n- **Index Portability**: FAISS indices serialize into clean, version-controlled binary files (`faiss.index`) that deploy seamlessly alongside application code, supporting efficient risk-adjusted valuation workflows [Chunk 6].\n\n#### 3. Balance Sheet Solvency & Capital Allocation Recommendation\n- **Cost-Risk Allocation**: Selecting FAISS minimizes technical debt and ongoing operational expenditures, allowing boutique capital to be allocated directly toward proprietary data acquisition and alpha generation [Chunk 7]."
+    }
+  }
+]

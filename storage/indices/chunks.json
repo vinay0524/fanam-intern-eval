@@ -1,0 +1,585 @@
+[
+  {
+    "chunk_id": "chunk_1",
+    "content": "Equity Research Note \u2014 Industrial Automation Sector\n\nNimbus Robotics, Inc. (NASDAQ: NMBR) vs. Solace Dynamics Corp. (NYSE: SLDC) \u2014 Comparative Analysis\n\nAnalyst: J. Whitfield, Senior Analyst \u2014 Industrial Technology | July 2026\n\nSummary",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_1"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_2",
+    "content": "Summary\n\nBoth Nimbus Robotics (NMBR) and Solace Dynamics (SLDC) compete in the collaborative and industrial robotics market. NMBR has posted stronger top-line growth over the trailing four quarters but has seen more pronounced margin compression from input cost inflation. SLDC has grown more slowly but maintained tighter cost discipline and a materially lower leverage profile.\n\nMargin & Profitability Comparison",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_2"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_3",
+    "content": "Margin & Profitability Comparison\n\nNMBR's gross margin fell from 43.7% to 38.2% year-over-year in Q2 2026, driven by steel and semiconductor input cost inflation of roughly 21%. SLDC's gross margin declined more modestly, from 41.0% to 39.1% over the same period, as SLDC had already diversified its component sourcing across three geographies in 2024, reducing its exposure to any single supplier price shock.\n\nLeverage & Liquidity Comparison",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_3"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_4",
+    "content": "SLDC carries substantially lower leverage and higher interest coverage, giving it more balance-sheet flexibility to absorb further input cost shocks without needing to draw additional revolver capacity. NMBR's debt-to-equity ratio rose from 0.94x to 1.23x over the past year specifically because it drew on its revolving credit facility to fund inventory build ahead of anticipated further cost increases \u2014 a deliberate but risk-increasing choice, not a result of declining equity value.",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_4"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_5",
+    "content": "Growth & Valuation",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_5"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_6",
+    "content": "NMBR trades at a forward P/E of 18.4x on trailing four-quarter revenue growth of approximately 8.9%. SLDC trades at a forward P/E of 15.1x on trailing four-quarter revenue growth of approximately 5.2%. On a pure growth basis NMBR appears more attractively priced relative to its growth rate, but this does not fully account for NMBR's higher leverage and greater margin volatility \u2014 two factors that increase the risk premium a rational investor should apply to NMBR's earnings relative to SLDC's.",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_6"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_7",
+    "content": "Notably, higher revenue growth alone has not translated into higher relative valuation multiples for NMBR versus SLDC on a risk-adjusted basis: NMBR's stock is up only 3% over the trailing twelve months despite faster revenue growth, while SLDC's stock is up 11%, reflecting the market's discounting of NMBR's margin and leverage trajectory.\n\nRecommendation",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_7"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_8",
+    "content": "Recommendation\n\nWe rate NMBR Neutral and SLDC Outperform. Investors seeking growth exposure to the robotics sector with lower balance-sheet risk should favor SLDC. NMBR remains a reasonable holding for investors with higher risk tolerance who believe management's supplier-diversification and fixed-price steel contract actions will restore gross margin by fiscal 2027.",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_8"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_9",
+    "content": "Metric | NMBR (Q2 2026) | SLDC (Q2 2026)\nDebt-to-Equity | 1.23x | 0.58x\nCurrent Ratio | 1.4x | 2.1x\nInterest Coverage | 4.8x | 9.6x",
+    "metadata": {
+      "document_name": "Analyst_Note_NMBR_vs_SLDC.docx",
+      "document_type": "docx",
+      "page_number": 1,
+      "chunk_id": "chunk_9"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_10",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 1]:\nTicker: NMBR | Financial Quarter: Q3 2024 | Net Revenue ($ Millions): 352.1 | Gross Margin (%): 44.5 | Operating Income ($ Millions): 79.4 | Diluted EPS ($): 0.83 | Total Debt ($ Millions): 398.2 | Total Equity ($ Millions): 489.0 | Debt-to-Equity Ratio: 0.81 | Current Ratio: 1.8 | Interest Coverage Ratio: 10.2 | Stock Price ($): 58.1 | Forward P/E Ratio: 17.9 | TTM Revenue Growth (%): 10.1",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_10"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_11",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 2]:\nTicker: NMBR | Financial Quarter: Q4 2024 | Net Revenue ($ Millions): 368.7 | Gross Margin (%): 44.1 | Operating Income ($ Millions): 82.6 | Diluted EPS ($): 0.87 | Total Debt ($ Millions): 410.5 | Total Equity ($ Millions): 494.3 | Debt-to-Equity Ratio: 0.83 | Current Ratio: 1.8 | Interest Coverage Ratio: 9.9 | Stock Price ($): 60.35 | Forward P/E Ratio: 18.0 | TTM Revenue Growth (%): 9.8",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 2,
+      "chunk_id": "chunk_11"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_12",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 3]:\nTicker: NMBR | Financial Quarter: Q1 2025 | Net Revenue ($ Millions): 371.4 | Gross Margin (%): 43.9 | Operating Income ($ Millions): 80.1 | Diluted EPS ($): 0.85 | Total Debt ($ Millions): 441.8 | Total Equity ($ Millions): 497.9 | Debt-to-Equity Ratio: 0.89 | Current Ratio: 1.7 | Interest Coverage Ratio: 9.1 | Stock Price ($): 59.8 | Forward P/E Ratio: 17.6 | TTM Revenue Growth (%): 9.4",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 3,
+      "chunk_id": "chunk_12"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_13",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 4]:\nTicker: NMBR | Financial Quarter: Q2 2025 | Net Revenue ($ Millions): 377.1 | Gross Margin (%): 43.7 | Operating Income ($ Millions): 71.8 | Diluted EPS ($): 0.89 | Total Debt ($ Millions): 471.0 | Total Equity ($ Millions): 501.6 | Debt-to-Equity Ratio: 0.94 | Current Ratio: 1.7 | Interest Coverage Ratio: 8.4 | Stock Price ($): 61.2 | Forward P/E Ratio: 17.8 | TTM Revenue Growth (%): 9.0",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 4,
+      "chunk_id": "chunk_13"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_14",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 5]:\nTicker: NMBR | Financial Quarter: Q3 2025 | Net Revenue ($ Millions): 389.9 | Gross Margin (%): 41.8 | Operating Income ($ Millions): 68.5 | Diluted EPS ($): 0.78 | Total Debt ($ Millions): 505.3 | Total Equity ($ Millions): 494.2 | Debt-to-Equity Ratio: 1.02 | Current Ratio: 1.6 | Interest Coverage Ratio: 7.2 | Stock Price ($): 59.95 | Forward P/E Ratio: 18.1 | TTM Revenue Growth (%): 9.6",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 5,
+      "chunk_id": "chunk_14"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_15",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 6]:\nTicker: NMBR | Financial Quarter: Q4 2025 | Net Revenue ($ Millions): 398.4 | Gross Margin (%): 40.6 | Operating Income ($ Millions): 63.9 | Diluted EPS ($): 0.72 | Total Debt ($ Millions): 548.7 | Total Equity ($ Millions): 491.0 | Debt-to-Equity Ratio: 1.12 | Current Ratio: 1.5 | Interest Coverage Ratio: 6.1 | Stock Price ($): 58.4 | Forward P/E Ratio: 18.3 | TTM Revenue Growth (%): 9.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 6,
+      "chunk_id": "chunk_15"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_16",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 7]:\nTicker: NMBR | Financial Quarter: Q1 2026 | Net Revenue ($ Millions): 403.8 | Gross Margin (%): 39.4 | Operating Income ($ Millions): 58.7 | Diluted EPS ($): 0.66 | Total Debt ($ Millions): 579.9 | Total Equity ($ Millions): 494.6 | Debt-to-Equity Ratio: 1.17 | Current Ratio: 1.45 | Interest Coverage Ratio: 5.4 | Stock Price ($): 57.1 | Forward P/E Ratio: 18.2 | TTM Revenue Growth (%): 8.7",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 7,
+      "chunk_id": "chunk_16"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_17",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 8]:\nTicker: NMBR | Financial Quarter: Q2 2026 | Net Revenue ($ Millions): 412.6 | Gross Margin (%): 38.2 | Operating Income ($ Millions): 54.3 | Diluted EPS ($): 0.61 | Total Debt ($ Millions): 612.4 | Total Equity ($ Millions): 498.1 | Debt-to-Equity Ratio: 1.23 | Current Ratio: 1.4 | Interest Coverage Ratio: 4.8 | Stock Price ($): 56.75 | Forward P/E Ratio: 18.4 | TTM Revenue Growth (%): 8.9",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 8,
+      "chunk_id": "chunk_17"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_18",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 9]:\nTicker: SLDC | Financial Quarter: Q3 2024 | Net Revenue ($ Millions): 298.4 | Gross Margin (%): 41.6 | Operating Income ($ Millions): 58.9 | Diluted EPS ($): 0.71 | Total Debt ($ Millions): 180.1 | Total Equity ($ Millions): 332.4 | Debt-to-Equity Ratio: 0.54 | Current Ratio: 2.3 | Interest Coverage Ratio: 10.8 | Stock Price ($): 71.2 | Forward P/E Ratio: 14.6 | TTM Revenue Growth (%): 5.8",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 9,
+      "chunk_id": "chunk_18"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_19",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 10]:\nTicker: SLDC | Financial Quarter: Q4 2024 | Net Revenue ($ Millions): 305.9 | Gross Margin (%): 41.4 | Operating Income ($ Millions): 60.1 | Diluted EPS ($): 0.73 | Total Debt ($ Millions): 182.9 | Total Equity ($ Millions): 338.0 | Debt-to-Equity Ratio: 0.54 | Current Ratio: 2.3 | Interest Coverage Ratio: 10.5 | Stock Price ($): 72.85 | Forward P/E Ratio: 14.8 | TTM Revenue Growth (%): 5.6",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 10,
+      "chunk_id": "chunk_19"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_20",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 11]:\nTicker: SLDC | Financial Quarter: Q1 2025 | Net Revenue ($ Millions): 309.2 | Gross Margin (%): 41.2 | Operating Income ($ Millions): 59.4 | Diluted EPS ($): 0.72 | Total Debt ($ Millions): 186.4 | Total Equity ($ Millions): 341.7 | Debt-to-Equity Ratio: 0.55 | Current Ratio: 2.2 | Interest Coverage Ratio: 10.1 | Stock Price ($): 73.4 | Forward P/E Ratio: 14.9 | TTM Revenue Growth (%): 5.4",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 11,
+      "chunk_id": "chunk_20"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_21",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 12]:\nTicker: SLDC | Financial Quarter: Q2 2025 | Net Revenue ($ Millions): 313.5 | Gross Margin (%): 41.0 | Operating Income ($ Millions): 60.8 | Diluted EPS ($): 0.74 | Total Debt ($ Millions): 188.0 | Total Equity ($ Millions): 346.9 | Debt-to-Equity Ratio: 0.54 | Current Ratio: 2.2 | Interest Coverage Ratio: 9.9 | Stock Price ($): 74.1 | Forward P/E Ratio: 15.0 | TTM Revenue Growth (%): 5.5",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 12,
+      "chunk_id": "chunk_21"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_22",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 13]:\nTicker: SLDC | Financial Quarter: Q3 2025 | Net Revenue ($ Millions): 318.9 | Gross Margin (%): 40.6 | Operating Income ($ Millions): 60.2 | Diluted EPS ($): 0.73 | Total Debt ($ Millions): 190.7 | Total Equity ($ Millions): 350.1 | Debt-to-Equity Ratio: 0.54 | Current Ratio: 2.2 | Interest Coverage Ratio: 9.8 | Stock Price ($): 75.3 | Forward P/E Ratio: 15.0 | TTM Revenue Growth (%): 5.3",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 13,
+      "chunk_id": "chunk_22"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_23",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 14]:\nTicker: SLDC | Financial Quarter: Q4 2025 | Net Revenue ($ Millions): 323.6 | Gross Margin (%): 40.1 | Operating Income ($ Millions): 59.7 | Diluted EPS ($): 0.72 | Total Debt ($ Millions): 193.5 | Total Equity ($ Millions): 353.8 | Debt-to-Equity Ratio: 0.55 | Current Ratio: 2.1 | Interest Coverage Ratio: 9.7 | Stock Price ($): 76.5 | Forward P/E Ratio: 15.0 | TTM Revenue Growth (%): 5.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 14,
+      "chunk_id": "chunk_23"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_24",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 15]:\nTicker: SLDC | Financial Quarter: Q1 2026 | Net Revenue ($ Millions): 327.2 | Gross Margin (%): 39.6 | Operating Income ($ Millions): 59.0 | Diluted EPS ($): 0.71 | Total Debt ($ Millions): 196.2 | Total Equity ($ Millions): 356.9 | Debt-to-Equity Ratio: 0.55 | Current Ratio: 2.1 | Interest Coverage Ratio: 9.7 | Stock Price ($): 77.6 | Forward P/E Ratio: 15.0 | TTM Revenue Growth (%): 5.1",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 15,
+      "chunk_id": "chunk_24"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_25",
+    "content": "Financial Statement Record [File: financial_statements_market_data.csv, Row 16]:\nTicker: SLDC | Financial Quarter: Q2 2026 | Net Revenue ($ Millions): 329.8 | Gross Margin (%): 39.1 | Operating Income ($ Millions): 58.4 | Diluted EPS ($): 0.71 | Total Debt ($ Millions): 198.4 | Total Equity ($ Millions): 359.7 | Debt-to-Equity Ratio: 0.58 | Current Ratio: 2.1 | Interest Coverage Ratio: 9.6 | Stock Price ($): 79.1 | Forward P/E Ratio: 15.1 | TTM Revenue Growth (%): 5.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 16,
+      "chunk_id": "chunk_25"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_26",
+    "content": "Financial Summary Table for Ticker NMBR (financial_statements_market_data.csv):\nticker quarter  net_revenue_musd  gross_margin_pct  operating_income_musd  diluted_eps_usd  total_debt_musd  total_equity_musd  debt_to_equity  current_ratio  interest_coverage  stock_price_usd  forward_pe  ttm_revenue_growth_pct",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_26"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_27",
+    "content": "NMBR Q3 2024             352.1              44.5                   79.4             0.83            398.2              489.0            0.81           1.80               10.2            58.10        17.9                    10.1\n  NMBR Q4 2024             368.7              44.1                   82.6             0.87            410.5              494.3            0.83           1.80                9.9            60.35        18.0                     9.8",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_27"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_28",
+    "content": "NMBR Q1 2025             371.4              43.9                   80.1             0.85            441.8              497.9            0.89           1.70                9.1            59.80        17.6                     9.4\n  NMBR Q2 2025             377.1              43.7                   71.8             0.89            471.0              501.6            0.94           1.70                8.4            61.20        17.8                     9.0",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_28"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_29",
+    "content": "NMBR Q3 2025             389.9              41.8                   68.5             0.78            505.3              494.2            1.02           1.60                7.2            59.95        18.1                     9.6\n  NMBR Q4 2025             398.4              40.6                   63.9             0.72            548.7              491.0            1.12           1.50                6.1            58.40        18.3                     9.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_29"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_30",
+    "content": "NMBR Q1 2026             403.8              39.4                   58.7             0.66            579.9              494.6            1.17           1.45                5.4            57.10        18.2                     8.7\n  NMBR Q2 2026             412.6              38.2                   54.3             0.61            612.4              498.1            1.23           1.40                4.8            56.75        18.4                     8.9",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_30"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_31",
+    "content": "Financial Summary Table for Ticker SLDC (financial_statements_market_data.csv):\nticker quarter  net_revenue_musd  gross_margin_pct  operating_income_musd  diluted_eps_usd  total_debt_musd  total_equity_musd  debt_to_equity  current_ratio  interest_coverage  stock_price_usd  forward_pe  ttm_revenue_growth_pct",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_31"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_32",
+    "content": "SLDC Q3 2024             298.4              41.6                   58.9             0.71            180.1              332.4            0.54            2.3               10.8            71.20        14.6                     5.8\n  SLDC Q4 2024             305.9              41.4                   60.1             0.73            182.9              338.0            0.54            2.3               10.5            72.85        14.8                     5.6",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_32"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_33",
+    "content": "SLDC Q1 2025             309.2              41.2                   59.4             0.72            186.4              341.7            0.55            2.2               10.1            73.40        14.9                     5.4\n  SLDC Q2 2025             313.5              41.0                   60.8             0.74            188.0              346.9            0.54            2.2                9.9            74.10        15.0                     5.5",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_33"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_34",
+    "content": "SLDC Q3 2025             318.9              40.6                   60.2             0.73            190.7              350.1            0.54            2.2                9.8            75.30        15.0                     5.3\n  SLDC Q4 2025             323.6              40.1                   59.7             0.72            193.5              353.8            0.55            2.1                9.7            76.50        15.0                     5.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_34"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_35",
+    "content": "SLDC Q1 2026             327.2              39.6                   59.0             0.71            196.2              356.9            0.55            2.1                9.7            77.60        15.0                     5.1\n  SLDC Q2 2026             329.8              39.1                   58.4             0.71            198.4              359.7            0.58            2.1                9.6            79.10        15.1                     5.2",
+    "metadata": {
+      "document_name": "financial_statements_market_data.csv",
+      "document_type": "csv",
+      "page_number": 1,
+      "chunk_id": "chunk_35"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_36",
+    "content": "Nimbus Robotics, Inc.\nForm 10-Q (Excerpt) \u2014 Quarterly Report \u2014 Period Ended June 30, 2026 \u2014 NASDAQ: NMBR\nItem 2. Management's Discussion and Analysis of\nFinancial Condition and Results of Operations\nNet revenue for the three months ended June 30, 2026 was $412.6 million, an increase of 9.4%\nyear-over-year, driven primarily by higher unit shipments of our collaborative robotic arm product line.\nGross margin declined to 38.2%, down from 43.7% in the prior-year period. The decline was driven",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_36"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_37",
+    "content": "primarily by a sustained increase in input costs for steel castings and semiconductor components used in\nour servo drive assemblies, which together rose approximately 21% year-over-year, combined with\nelevated freight surcharges related to ongoing carrier capacity constraints.\nDiluted earnings per share for the quarter were $0.61, down from $0.89 in the prior-year period.\nManagement estimates that approximately $0.19 of the $0.28 year-over-year EPS decline is directly",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_37"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_38",
+    "content": "attributable to gross margin compression from input cost inflation, with the remainder attributable to higher\ninterest expense on variable-rate debt and increased R&D; investment in our next-generation\nvision-guided picking system.\nWe have taken several mitigating actions, including qualifying a second semiconductor supplier in\nSoutheast Asia to reduce single-source exposure, and entering into a 12-month fixed-price agreement for",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_38"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_39",
+    "content": "approximately 60% of our steel casting volume beginning in Q3 2026. Management expects these actions\nto partially offset margin pressure beginning in the fourth quarter of fiscal 2026, though we do not expect\ngross margin to return to prior-year levels before fiscal 2027.\nLiquidity and Capital Resources\nAs of June 30, 2026, total debt outstanding was $612.4 million, consisting of $450.0 million in senior notes",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_39"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_40",
+    "content": "and $162.4 million drawn on our revolving credit facility. Total stockholders' equity was $498.1 million,\nresulting in a debt-to-equity ratio of approximately 1.23x, up from 0.94x at the end of fiscal 2025. The\nincrease in leverage primarily reflects the additional revolver drawdown used to fund inventory build ahead\nof anticipated further input cost increases. Our current ratio at quarter-end was 1.4x, compared to 1.7x a\nyear ago.\nRisk Factors (Updated)",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_40"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_41",
+    "content": "year ago.\nRisk Factors (Updated)\nSustained increases in the cost of steel, semiconductor components, or freight could continue to compress\ngross margin faster than we are able to offset through pricing actions or supplier diversification. Our\nvariable-rate revolving credit facility exposes us to interest rate risk; a 100 basis point increase in reference\nrates would increase annualized interest expense by approximately $1.6 million based on the current\noutstanding balance.",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 1,
+      "chunk_id": "chunk_41"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_42",
+    "content": "Selected Financial Data (Unaudited, $ in millions\nexcept per-share data)\n Metric\nQ2 2026\nQ2 2025\nYoY Change\nNet Revenue\n$412.6\n$377.1\n+9.4%\nGross Margin %\n38.2%\n43.7%\n-5.5 pts\nOperating Income\n$54.3\n$71.8\n-24.4%\nDiluted EPS\n$0.61\n$0.89\n-31.5%\nTotal Debt\n$612.4\n$471.0\n+30.0%\nTotal Equity\n$498.1\n$501.6\n-0.7%\nDebt-to-Equity\n1.23x\n0.94x\n+0.29x\nCurrent Ratio\n1.4x\n1.7x\n-0.3x",
+    "metadata": {
+      "document_name": "Nimbus_Robotics_10Q_Q2_2026.pdf",
+      "document_type": "pdf",
+      "page_number": 2,
+      "chunk_id": "chunk_42"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_43",
+    "content": "Nimbus Robotics, Inc. (NASDAQ: NMBR)\nQ2 2026 Earnings Call Transcript \u2014 July 22, 2026\n\nOperator: Good morning and welcome to the Nimbus Robotics second quarter fiscal 2026 earnings call.\nJoining us today are CEO Elena Marsh and CFO David Ochoa.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_43"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_44",
+    "content": "Elena Marsh, CEO:\nThank you. Q2 was a quarter of contrasts. Revenue grew 9.4% year-over-year to $412.6 million, ahead\nof our guidance range, driven by strong demand for our collaborative arm product line, particularly\nin automotive and electronics assembly customers. At the same time, we saw meaningful gross margin\npressure from input costs, which I'll let David walk through in detail.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_44"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_45",
+    "content": "David Ochoa, CFO:\nThanks, Elena. Gross margin came in at 38.2%, down five and a half points year-over-year. The primary\ndriver was a roughly 21% year-over-year increase in the combined cost of steel castings and\nsemiconductor components used in our servo drive assemblies. We also saw elevated freight surcharges\ntied to ongoing carrier capacity constraints, which added a smaller but still meaningful drag.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_45"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_46",
+    "content": "Diluted EPS was $0.61 versus $0.89 a year ago. Of that $0.28 decline, we estimate about $0.19 is\ndirectly attributable to gross margin compression from these input costs, with the remaining $0.09\nsplit between higher interest expense on our revolver draw and increased R&D spend on our\nnext-generation vision-guided picking system.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_46"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_47",
+    "content": "On the balance sheet, we ended the quarter with $612.4 million in total debt against $498.1 million\nin equity, putting our debt-to-equity ratio at 1.23x, up from 0.94x a year ago. That increase reflects\na deliberate decision to draw on our revolver to build inventory ahead of what we expect to be further\ninput cost increases in the second half of the year \u2014 it is not a reflection of deteriorating\nprofitability.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_47"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_48",
+    "content": "We're taking two concrete actions to address the cost pressure. First, we've qualified a second\nsemiconductor supplier in Southeast Asia to reduce single-source exposure. Second, we've locked in a\n12-month fixed-price agreement covering about 60% of our steel casting volume starting in Q3. We\nexpect these actions to begin offsetting margin pressure in Q4, though we don't expect gross margin\nto fully recover to prior-year levels until fiscal 2027.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_48"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_49",
+    "content": "Analyst Q&A \u2014 Marcus Webb, Fairview Capital:\nQ: David, can you help us understand why margin didn't recover faster given you've had a couple of\nquarters now to react to input cost inflation?\nA (Ochoa): The steel and semiconductor cost increases were broader and more sustained than we\ninitially modeled at the start of the year. We didn't want to lock into a long-term fixed-price\ncontract until we had better visibility, which is why the fixed-price agreement only starts in Q3.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_49"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_50",
+    "content": "In hindsight we could have moved faster on supplier diversification, but we prioritized getting the\nright long-term partner rather than the fastest option.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_50"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_51",
+    "content": "Analyst Q&A \u2014 Priya Nair, Ashcroft Securities:\nQ: Should we read the revolver drawdown as a signal you're worried about further cost increases, and\nhow are you thinking about leverage going forward?\nA (Ochoa): It's fair to say we built inventory defensively. We're comfortable operating up to roughly\n1.5x debt-to-equity for a limited period, but we do expect to delever back toward 1.0x by the end of\nfiscal 2027 as the fixed-price steel contract and new semiconductor supplier reduce the need for",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_51"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_52",
+    "content": "precautionary inventory build.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_52"
+    },
+    "score": null
+  },
+  {
+    "chunk_id": "chunk_53",
+    "content": "Elena Marsh, CEO (closing):\nTo summarize: strong demand, real cost pressure, and a clear plan to offset it. We're confident in\nthe actions we've laid out and expect margin trends to inflect in the fourth quarter.\n\nOperator: This concludes today's call.",
+    "metadata": {
+      "document_name": "NMBR_Q2_2026_Earnings_Call_Transcript.txt",
+      "document_type": "txt",
+      "page_number": 1,
+      "chunk_id": "chunk_53"
+    },
+    "score": null
+  }
+]
